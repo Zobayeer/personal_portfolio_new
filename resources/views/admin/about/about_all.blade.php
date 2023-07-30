@@ -53,7 +53,7 @@
         <div class="row mb-3">
             <label for="example-text-input" class="col-sm-2 col-form-label">  </label>
             <div class="col-sm-10">
-                <img id="showImage" class="rounded avatar-lg" src="{{ (!empty($aboutData->about_image))? url($aboutData->about_image):url('upload/noimg.png') }}" height="80" width="80">
+                <img id="show" class="rounded avatar-lg" src="{{url('upload/noimg.png') }}" height="80" width="80">
             </div>
         </div>
         <!-- end row -->
@@ -65,7 +65,7 @@
             $('#image').change(function(e){
                 var reader = new FileReader();
                 reader.onload = function(e){
-                    $('#showImage').attr('src',e.target.result);
+                    $('#show').attr('src',e.target.result);
                 }
                 reader.readAsDataURL(e.target.files['0']);
             });

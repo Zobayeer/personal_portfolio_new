@@ -24,7 +24,7 @@ style="border-collapse: collapse; border-spacing: 0; width: 100%;">
         <td><img src="{{ asset($item->portfolio_image) }}" height="100px" width="100px" alt="">
         </td>
         <td>
-            <a href="" class="btn btn-primary sm" title="Edit photo"><i class="fas fa-edit"></i></a>
+            <a href="{{ route('edit.view'), $item->id }}" class="btn btn-primary sm" title="Edit photo"><i class="fas fa-edit"></i></a>
             <a href="" class="btn btn-danger sm" title="delete photo" id="delete"><i class="fa fa-trash"></i></a>
         </td>
       </tr>

@@ -52,7 +52,7 @@
     <div class="row mb-3">
         <label for="example-text-input" class="col-sm-2 col-form-label">  </label>
         <div class="col-sm-10">
-            <img id="showImage" class="rounded avatar-lg" src="{{ url('upload/noimg.png') }}" height="80" width="80">
+            <img id="showImage" class="rounded avatar-lg" src="{{ (!empty($portfolio->portfolio_image))? url($portfolio->portfolio_image):url('upload/noimg.png') }}" height="80" width="80">
         </div>
     </div>
     <!-- end row -->
