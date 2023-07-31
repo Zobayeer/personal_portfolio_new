@@ -52,6 +52,8 @@ Route::controller(aboutController::class)->group(function (){
     Route::get('/edit/multiImage/view/{id}', 'editMultiImage')->name('edit_multiimage');
     Route::post('/update/multiImage/', 'updateMultiImage')->name('update_multiimage');
     Route::get('/delete/multiImage/{id}', 'deleteMultiImage')->name('delete_multiimage');
+    
+    Route::get('/about/details', 'aboutDetails')->name('about.details');
 
 });
 //frontend portfolio route
